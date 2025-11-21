@@ -1,6 +1,6 @@
 FROM lsiobase/selkies:debiantrixie
 
-ENV TITLE=Baidu Netdisk
+ENV TITLE="Baidu Netdisk"
 ENV LC_ALL=zh_CN.UTF-8
 ENV NO_FULL=true
 ENV NO_GAMEPAD=true
