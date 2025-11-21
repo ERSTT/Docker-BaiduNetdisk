@@ -2,6 +2,39 @@
 
 baidunetdisk="/usr/local/baidunetdisk_installed"
 
+CONFIG_DIR="/config"
+if [ -d "$CONFIG_DIR/.cache" ]; then
+    echo "Removing $CONFIG_DIR/.cache ..."
+    rm -rf "$CONFIG_DIR/.cache"
+fi
+
+if [ -d "$CONFIG_DIR/.dbus" ]; then
+    echo "Removing $CONFIG_DIR/.dbus ..."
+    rm -rf "$CONFIG_DIR/.dbus"
+fi
+
+if [ -d "$CONFIG_DIR/.local" ]; then
+    echo "Removing $CONFIG_DIR/.local ..."
+    rm -rf "$CONFIG_DIR/.local"
+fi
+
+if [ -d "$CONFIG_DIR/.XDG" ]; then
+    echo "Removing $CONFIG_DIR/.XDG ..."
+    rm -rf "$CONFIG_DIR/.XDG"
+fi
+
+if [ -d "$CONFIG_DIR/.config/openbox" ]; then
+    echo "Removing $CONFIG_DIR/.config/openbox ..."
+    rm -rf "$CONFIG_DIR/.config/openbox"
+fi
+
+if [ -d "$CONFIG_DIR/.config/pulse" ]; then
+    echo "Removing $CONFIG_DIR/.config/pulse ..."
+    rm -rf "$CONFIG_DIR/.config/pulse"
+fi
+
+echo "Clean up complete."
+
 if [ ! -f "$baidunetdisk" ]; then
     arch=$(uname -m)
     
