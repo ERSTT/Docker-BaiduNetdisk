@@ -17,9 +17,7 @@ RUN apt-get update && \
         libatspi2.0-0 \
         libuuid1 \
         libsecret-1-0 \
-        libappindicator3-1 \
-        chromium \
-        chromium-l10n && \
+        libappindicator3-1 && \
     mkdir -p /defaults && \
     curl -L -o /defaults/menu.xml \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/menu.xml && \
