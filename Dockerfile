@@ -27,10 +27,10 @@ RUN apt-get update && \
     curl -L -o /defaults/menu.xml \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/menu.xml && \
     curl -L -o /usr/share/selkies/www/icon.png \
-        https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/BaiduNetdisk.png && \
+        https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/baidunetdisk.png && \
     curl -L -o /usr/bin/start-baidunetdisk.sh \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/start-baidunetdisk.sh && \
-    curl -L -o /usr/local/wechat-icon.png \
+    curl -L -o /usr/local/baidunetdisk-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/baidunetdisk-icon.png && \
     chmod +x /usr/bin/start-baidunetdisk.sh && \
     echo "/usr/bin/start-baidunetdisk.sh" > /defaults/autostart && \
