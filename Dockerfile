@@ -29,5 +29,5 @@ RUN apt-get update && \
     curl -L -o /usr/local/baidunetdisk-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/baidunetdisk-icon.png && \
     chmod +x /usr/bin/start-baidunetdisk.sh && \
-    echo "/usr/bin/start-baidunetdisk.sh >> /dev/stdout 2>&1" > /defaults/autostart && \
+    echo "/usr/bin/start-baidunetdisk.sh >> /proc/1/fd/1 2>&1" > /defaults/autostart && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
