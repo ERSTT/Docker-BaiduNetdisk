@@ -1,4 +1,4 @@
-FROM lsiobase/selkies:debiantrixie
+FROM lsiobase/selkies:debianbookworm
 
 ENV TITLE="Baidu Netdisk"
 ENV LC_ALL=zh_CN.UTF-8
