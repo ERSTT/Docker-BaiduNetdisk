@@ -8,6 +8,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         curl \
         ca-certificates \
+        libgtkmm-2.4-1v5 \
         libgtk-3-0 \
         libnotify4 \
         libnss3 \
@@ -28,5 +29,5 @@ RUN apt-get update && \
     curl -L -o /usr/local/baidunetdisk-icon.png \
         https://raw.githubusercontent.com/ERSTT/Docker-BaiduNetdisk/refs/heads/main/baidunetdisk-icon.png && \
     chmod +x /usr/bin/start-baidunetdisk.sh && \
-    echo "/usr/bin/start-baidunetdisk.sh" > /defaults/autostart && \
+    echo "/usr/bin/start-baidunetdisk.sh >> /dev/stdout 2>&1" > /defaults/autostart && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
