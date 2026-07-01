@@ -31,7 +31,7 @@ if [ ! -f "$BAIDU_MARKER" ]; then
     echo "Fetching latest download URL from Baidu API..."
 
     api_response=$(curl -s "https://pan.baidu.com/disk/cmsdata?do=client")
-    url=$(echo "$api_response" | grep -o -E "https?://[^\"']+\.${arch_keyword}" | head -n1)
+    url=$(echo "$api_response" | grep -o -E "https?://[^\"]*${arch_keyword}" | head -n1)
     
     if [ $is_arm64 -eq 1 ]; then
         echo "Notice: ARM64 architecture detected. Using temporary fallback URL (v4.17.7)..."
