@@ -56,7 +56,7 @@ fi
 
 echo "Starting Baidu Netdisk..."
 if [ -f "/opt/baidunetdisk/baidunetdisk" ]; then
-    /opt/baidunetdisk/baidunetdisk --no-sandbox > /dev/null 2>&1 &
+    /opt/baidunetdisk/baidunetdisk --no-sandbox --disable-dev-shm-usage > /dev/null 2>&1 &
 else
     echo "Error: Installation file not found in /opt/baidunetdisk/"
     exit 1
