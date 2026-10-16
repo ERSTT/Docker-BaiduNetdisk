@@ -1,5 +1,6 @@
 FROM lsiobase/selkies:debianbookworm
 
+ARG DEBIAN_FRONTEND=noninteractive
 ENV TITLE="Baidu Netdisk"
 ENV LC_ALL=zh_CN.UTF-8
 ENV NO_GAMEPAD=true
