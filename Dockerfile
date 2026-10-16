@@ -1,4 +1,4 @@
-FROM lsiobase/selkies:debianbookworm
+FROM lsiobase/selkies:debiantrixie
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TITLE="Baidu Netdisk"
