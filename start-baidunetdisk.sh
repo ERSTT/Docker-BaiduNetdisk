@@ -63,4 +63,4 @@ else
 fi
 
 #todo
-#/opt/baidunetdisk/baidunetdisk --no-sandbox --disable-gpu > /dev/null 2>&1 &
+#/opt/baidunetdisk/baidunetdisk --no-sandbox --disable-gpu --disable-dev-shm-usage > /dev/null 2>&1 &
